@@ -1,6 +1,9 @@
-
 body {
   font-family: 'Roboto', sans-serif;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 .page-header {
@@ -43,5 +46,5 @@ a {
   right: 0;
   top: 0;
   left: 0;
-  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }

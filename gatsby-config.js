@@ -7,6 +7,16 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-transformer-remark",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "posts",
+        path: `${__dirname}/src/posts`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
