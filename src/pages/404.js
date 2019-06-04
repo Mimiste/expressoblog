@@ -1,8 +1,14 @@
-import React from "react"
+import React from 'react'
+import Layout from '../components/Layout'
+import { Row, Col } from 'react-bootstrap'
 
 const NotFoundPage = () => (
   <>
-    <h1>NOT FOUND</h1>
+    <Layout>
+      <Row>
+        <Col className="text-center">404 NOT FOUND</Col>
+      </Row>
+    </Layout>
   </>
 )
 
