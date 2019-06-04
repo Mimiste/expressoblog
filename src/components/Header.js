@@ -1,5 +1,5 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import { Container } from 'react-bootstrap'
 
@@ -20,7 +20,9 @@ const Header = ({ title, description }) => {
     <header className="page-header bg-primary text-white">
       <Img fluid={imgQuery.fileName.childImageSharp.fluid} />
       <Container fluid className="text-center title">
-        <h1>{title}</h1>
+        <h1>
+          <Link to="/">{title} </Link>
+        </h1>
         <h2 className="lead">{description}</h2>
       </Container>
     </header>

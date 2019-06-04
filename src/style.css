@@ -6,9 +6,29 @@ h3 {
   font-size: 1.3em;
 }
 
+a {
+  text-decoration: none;
+  color: #1c2331;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #1c2331;
+}
+
 .page-header {
   padding: 40px 0;
   position: relative;
+}
+
+.page-header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.page-header a:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .page-footer {
@@ -20,12 +40,6 @@ h3 {
 
 .page-footer a {
   color: rgba(255, 255, 255, 0.7);
-}
-
-a {
-  color: #4eb8ff;
-  text-decoration: none;
-  background-color: transparent;
 }
 
 .lead {

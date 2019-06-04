@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import { ListGroup } from 'react-bootstrap'
 
 const IndexPage = () => {
@@ -22,7 +22,9 @@ const IndexPage = () => {
 
   const postsList = allMarkdownRemark.nodes.map((node, i) => (
     <ListGroup.Item key={i}>
-      <h3>{node.frontmatter.title}</h3>
+      <h3>
+        <Link to={node.frontmatter.path}>{node.frontmatter.title}</Link>
+      </h3>
       <div className="text-muted">{node.frontmatter.date}</div>
     </ListGroup.Item>
   ))
